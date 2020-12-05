@@ -43,7 +43,7 @@ cargo {
             downloadDir = file("$buildDir/download")
             extractDir = file("$buildDir/tomcat")
         }
-        startStopTimeout = 240000
+        startStopTimeout = 440000
         containerProperties {
             property 'cargo.tomcat.connector.keystoreFile', file("$rootDir/fineract-provider/src/main/resources/keystore.jks")
             property 'cargo.tomcat.connector.keystorePass', 'openmf'
